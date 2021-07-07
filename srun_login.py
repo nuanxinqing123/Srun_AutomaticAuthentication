@@ -46,4 +46,7 @@ def Start():
         # print("认证已完成，无需再次认证")
         browser.quit()
         return "认证已完成，无需再次认证"
+    # 无论如何都要执行的任务
+    finally:
+        browser.quit()
 
