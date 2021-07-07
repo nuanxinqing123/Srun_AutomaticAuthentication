@@ -8,7 +8,7 @@
 项目环境：selenium、flask
 srun_login.py：大家可以根据自己的学校自行修改18行处的地址，因为我们学校是内网认证，所以我直接写了内网地址，使用的话更改自己的学校认证地址即可，再22-23行修改需要认证的账号
 chromedriver.exe：项目里面这个谷歌浏览器驱动是：91.0.4472.101,如果你和我的版本一致那就直接使用即可。其他版本的用户下载后，解压覆盖目录里的版本即可
-查看自己的浏览器版本:[关于Chrome](chrome://settings/help)
+查看自己的浏览器版本:[关于Chrome](https://jingyan.baidu.com/article/f0e83a25e1e06962e59101f3.html)
 驱动下载地址：[淘宝镜像站](http://npm.taobao.org/mirrors/chromedriver/)
 
 ## 全自动认证思路
