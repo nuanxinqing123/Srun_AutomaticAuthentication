@@ -4,7 +4,7 @@
 ## 项目思路
 来源于[ytf4425/Srun_login](https://github.com/ytf4425/Srun_login/)
 
-## 项目说明
+## 项目介绍
 
 项目环境：selenium、flask
 
