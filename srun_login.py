@@ -14,6 +14,8 @@ def Start():
     options.add_argument('--disable-software-rasterizer')
 
     browser = webdriver.Chrome(options=options)
+    # Linux上使用，推荐指定绝对路径
+    # browser = webdriver.Chrome("绝对路径", options=options)
 
     # 一般情况：必须使用HTTP，使用HTTPS将无法跳转。否则反转
     # 修改为自己学校的认证地址或者认证支持跳转的话，修改为http://www.baidu.com也行
