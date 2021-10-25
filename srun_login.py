@@ -1,3 +1,10 @@
+"""
+ * @Author: Nuanxinqing
+ * @Email：nuanxinqing@gmail.com
+ * @File:  srun_login.py
+ * @Date: 2021/7/6 16:27
+"""
+
 import selenium
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
