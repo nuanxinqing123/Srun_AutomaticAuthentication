@@ -49,7 +49,6 @@ def Start():
             browser.quit()
 
     except selenium.common.exceptions.NoSuchElementException:
-        # print("认证已完成，无需再次认证")
         browser.quit()
         return "认证已完成，无需再次认证"
 
@@ -57,6 +56,12 @@ def Start():
         # 这个错误一般是因为已经认证完成而导致的页面跳转发生的无法找到对应元素
         browser.quit()
         return "认证已完成，无需再次认证"
+
+    except selenium.common.exceptions.TimeoutException:
+        # 这个错误一般是由于网站经常会响应比较慢，或者还没加载完全就返回空白页，导致程序经常检测不到元素卡死
+        # 可以修改此处，让程序重复执行或者放弃执行
+        browser.quit()
+        return "响应比过慢，放弃本次认证"
 
     # 无论如何都要执行的任务
     finally:
