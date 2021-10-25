@@ -30,8 +30,8 @@ def Start():
 
     try:
         # 输入自己的用户名,密码
-        username_ = 'xxxyjyl'
-        password_ = 'xinxixinxi'
+        username_ = 'xxx'
+        password_ = 'xxx'
 
         # 驱动输入用户名,密码
         username = browser.find_element_by_xpath('//*[@id="username"]')
@@ -47,10 +47,8 @@ def Start():
         try:
             # 页面一直循环，直到 id="myDynamicElement" 出现
             element = WebDriverWait(browser, 10).until(
-                # EC.presence_of_element_located((By.XPATH, '//*[@id="logout-dm"]'))
                 EC.presence_of_element_located((By.XPATH, '//*[@id="ip"]'))
             )
-            # print("需要认证，已认证成功")
             return "需要认证，已认证成功"
         finally:
             browser.quit()
